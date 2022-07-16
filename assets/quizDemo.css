@@ -117,3 +117,11 @@ button:active{
     right:-50%;
     color: green;
 }
+@media screen and (mac-width:500px){
+    #notice{
+        right:-75%;
+    }
+    #c-notice{
+        right:-75%;
+    }
+}
