@@ -117,11 +117,12 @@ button:active{
     right:-50%;
     color: green;
 }
-@media screen and (mac-width:500px){
+@media screen and (max-width:550px){
     #notice{
         right:-80%;
     }
     #c-notice{
         right:-80%;
     }
+    
 }
