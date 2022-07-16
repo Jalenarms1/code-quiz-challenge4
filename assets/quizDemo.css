@@ -96,6 +96,7 @@ button:active{
     display:flex;
     margin: 2% auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #notice{
     position:absolute;
@@ -105,8 +106,9 @@ button:active{
 }
 .clearContain button{
     border-radius:5px;
-    padding:5px;
-    width:12%;
+    padding:8px 20px;
+    width:auto;
+    margin: 1%;
     cursor: pointer;
 }
 #c-notice{
