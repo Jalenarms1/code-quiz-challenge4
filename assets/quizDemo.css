@@ -119,9 +119,9 @@ button:active{
 }
 @media screen and (mac-width:500px){
     #notice{
-        right:-75%;
+        right:-80%;
     }
     #c-notice{
-        right:-75%;
+        right:-80%;
     }
 }
