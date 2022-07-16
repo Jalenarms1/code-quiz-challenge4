@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="./assets/quizDemo.css" />
+    <title>Know Your Code?</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <p class="score" id="score">score</p>
+            <p class="timer" id="timer"></p>
+            <p class="hide" id="notice">INCORRECT -</p>
+            <p class="hide" id="c-notice">CORRECT +</p>
+        </div>
+        <div class="content">
+            <div class="wrapHeading">
+                <h1 id="theHeading">Know your Code?</h1>
+                <div class="questionHeading">
+            </div>
+                <h3 id="questions"></h3>
+                <div class="answerContainer hide">
+                    <button id="possibleAnswer" data-answer1>Possible Answer 1</button>
+                    <button id="possibleAnswer" data-answer2>Possible Answer 2</button>
+                    <button id="possibleAnswer" data-answer3>Possible Answer 3</button>
+                    <button id="possibleAnswer" data-answer4>Possible Answer 4</button>
+                    <p id="actual" class="hide">Actual answer</p>
+                </div>
+                <div class="advancer">
+                    <button id="start">Start</button>
+                    
+                </div>
+            </div>   
+        </div>
+        <form class="scoring hide" id="scoreTable">
+            <p>Enter a name to save and compare your score:</p>
+            <input type="text" id="scoreSave">
+            <ol id="keepScore"></ol>   
+        </form>
+        <div class="clearContain">
+            <button id="clearList" class="hide">Clear Scores</button>
+            <button id="restart" class="hide">Restart</button>
+        </div>
+    </div>
+    <script src="./assets/quizDemo.js"></script>
+</body>
+</html>
+
