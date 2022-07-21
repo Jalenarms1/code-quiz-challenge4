@@ -145,6 +145,7 @@ function correctCheck(event){
         scoreDiv.classList.remove("hide");
         clearList.classList.remove("hide");
         restartBtn.classList.remove("hide");
+        
         return
     }
     
@@ -170,9 +171,10 @@ function init(){
     var storage = JSON.parse(localStorage.getItem("items"));
     if(storage !== null){
         finalScores = storage;
-    } return storage
+    }
 }
 init();
+
 
 // this function will create a new list item for each name-saved score and append it to the ol in the markup
 
@@ -182,18 +184,21 @@ function results(event){
     
     var scoreText = saveInput.value + " " + score + "/" + qIndex;
     finalScores.push(scoreText);
-    
+
     for(i = 0; i < finalScores.length; i++){
         var listItems = finalScores[i];
 
         var each = document.createElement("li");
         each.textContent = listItems;
         scoreList.appendChild(each);
+        
     }
     saveInput.value = "";
     storeScores();
     finalScores = [];      
 }
+
+
 function reloadBrowser(){
     location.reload();
     
@@ -204,8 +209,10 @@ function clear(){
     localStorage.clear();
          
 }
+
 scoreDiv.addEventListener("submit", results);
 clearList.addEventListener("click", clear)
 restartBtn.addEventListener("click", reloadBrowser);
+
 
 
